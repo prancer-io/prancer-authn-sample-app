@@ -1,0 +1,15 @@
+{{set . "title" "GoogleOAuthCallBack"}}
+{{template "header.html" .}}
+
+<h1>Google Authentication</h1>
+
+<p><b>{{raw .status}}</b></p>
+{{if raw .result}}
+	<p>Access Token :</p>
+	<textarea class="jwt_textarea">{{raw .result}}</textarea>
+{{end}}
+<p>
+	<a href="/">Back to home</a>
+</p>
+
+{{template "footer.html" .}}

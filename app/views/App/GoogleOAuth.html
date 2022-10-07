@@ -1,0 +1,12 @@
+{{set . "title" "GoogleOAuth"}}
+{{template "header.html" .}}
+
+<h1>Google Authentication</h1>
+<form method="post" action="/GoogleOAuth_Login">
+    <button>Login</button>
+</form>
+<p>
+	<a href="/">Back to home</a>
+</p>
+
+{{template "footer.html" .}}
